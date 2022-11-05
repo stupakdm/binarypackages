@@ -11,12 +11,14 @@ You can download:
 
 Execution:
 
-- To compile programm you need to enter command from command line python3 main.py {args} where {args} - names of two branches(default: p10 and p9)
+- To compile programm you need to
+  - Change rules for file execute.sh with a command: chmod +x ./execute.sh
+  - Enter command: ./execute.sh {argv1} {argv2}
+  It will compile main.cpp and uses argv1 and argv2 as branches. Programm will download binary packages from this branches.
+  Example: ./execute p10 p9
   - Example: python3 main.py p10 p9
-- Programm prints a result in a JSON-format. Format of a result:
-  - task1{branch_one}_{branch_two}_length 
-  - task1{branch_one}_{branch_two}_packages 
-  - task2{branch_one}_{branch_two}_length 
-  - task2{branch_one}_{branch_two}_packages 
-  - task3{branch_one}_{branch_two}_length 
-  - task3{branch_one}_{branch_two}_packages
+  
+  Programm prints a result in a files 
+  - packages11_result.txt - first task. 
+  - packages12_result.txt - second task.
+  - packages2_result.txt - third task. 
