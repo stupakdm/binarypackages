@@ -14,9 +14,9 @@ Execution:
 - To compile programm you need to
   - Change rules for file execute.sh with a command: chmod +x ./execute.sh
   - Enter command: ./execute.sh {argv1} {argv2}
-  It will compile main.cpp and uses argv1 and argv2 as branches. Programm will download binary packages from this branches.
-  Example: ./execute p10 p9
-  - Example: python3 main.py p10 p9
+- It will compile main.cpp and uses argv1 and argv2 as branches. 
+- Programm will download binary packages from this branches.
+- Example: ./execute p10 p9
   
   Programm prints a result in a files 
   - packages11_result.txt - first task. 
