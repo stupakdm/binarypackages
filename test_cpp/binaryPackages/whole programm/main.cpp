@@ -329,7 +329,7 @@ vector<struct package> binaryPackages::parse_json(string json)
     {
         json = json.substr(found+length.size()+2, json.size());
         size_t found = json.find(',');
-        int amount = min(1000, atoi(json.substr(0, found).c_str())); //atoi(json.substr(0, found).c_str());  //min(100, atoi(json.substr(0, found).c_str()));
+        int amount = atoi(json.substr(0, found).c_str());//min(1000, atoi(json.substr(0, found).c_str()));
 
         for (int i =0;i<amount;i++)
         {
